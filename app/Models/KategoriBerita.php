@@ -14,7 +14,6 @@ class KategoriBerita extends Model
     
     protected $fillable = [
         'nama_kategori',
-        'slug',
         'deskripsi'
     ];
     

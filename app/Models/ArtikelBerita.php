@@ -15,17 +15,16 @@ class ArtikelBerita extends Model
 
     protected $fillable = [
         'judul',
-        'slug',
-        'konten',
+        'konten_berita',
         'gambar',
         'id_admin',
         'id_kategori',
         'status',
-        'tanggal_publikasi'
+        'tanggal_pembuatan'
     ];
 
     protected $casts = [
-        'tanggal_publikasi' => 'datetime',
+        'tanggal_pembuatan' => 'datetime',
     ];
 
     // Relasi: Artikel ditulis oleh admin
